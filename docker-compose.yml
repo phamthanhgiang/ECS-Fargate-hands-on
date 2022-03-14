@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  php-fpm:
+    build:
+      context: .
+      target: app_php
+    volumes:
+      - ./:/srv/app
+  nginx:
+    build:
+      context: .
+      target: app_nginx
+    depends_on:
+      - php-fpm
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/srv/app

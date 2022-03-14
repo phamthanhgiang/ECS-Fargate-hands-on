@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../style-new-design-html.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <!-- User Heat Tag -->
+    <script type="text/javascript">
+        (function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhp0L7hU4G'});
+    </script>
+    <!-- End User Heat Tag -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40225089-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40225089-9');
+    </script>
+</head>
+
+<body class="header-gray">
+
+    <div class="title-page d-flex-center">
+        <h1 class="font-weight-bold">Contact</h1>
+    </div>
+    <div class="border-bottom">
+        <div class="container container-fix">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="my-breadcrumb">
+                        <ul class="ul-breadcrumb px-0 mb-0">
+                            <li class="breadcrumb-item py-2 active" aria-current="page">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="signup-step-container">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="wizard">
+                        <div class="wizard-inner">
+                            <div class="connecting-line"></div>
+                            <ul id="processBar" class="nav nav-tabs" role="tablist">
+                                <li class="active" data-target="step1">
+                                    <a href="javascript:void(0)"><span class="round-tab">1 </span> <i>入力</i></a>
+                                </li>
+                                <li data-target="step2">
+                                    <a href="javascript:void(0)"><span class="round-tab">2</span> <i
+                                            class="i-step-2">入力内容の確認</i></a>
+                                </li>
+                                <li data-target="step3">
+                                    <a href="javascript:void(0)"><span
+                                            class="round-tab">3</span> <i class="vn">完了</i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form id="formContact" role="form" class="login-box form"action="./../php/contact.php">
+                            <div class="tab-content mt-30" id="main_form">
+                                <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <div class="form-base form-base-contact">
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">会社名</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1">
+                                                <input type="text" placeholder="会社名"
+                                                       name="company_name" data-title="会社名">
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap align-items-start">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">お名前</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1">
+                                                <input type="text" placeholder="お名前"
+                                                       name="name" data-title="お名前">
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap align-items-start">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">電話番号</div>
+                                                <div class="note-form jp gray">任意</div>
+                                            </div>
+                                            <div class="input-form flex-1">
+                                                <input id="phoneNumber" type="text" maxlength="10" placeholder="02836360110"
+                                                       name="phone" data-title="電話番号">
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">メールアドレス</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1">
+                                                <input type="text" placeholder="mail@mail.com" name="email"
+                                                       data-title="メールアドレス">
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap align-items-start">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">お問い合わせ</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1">
+                                                <textarea placeholder="お問い合わせ内容を入力してください"
+                                                          name="inquiry" data-title="お問い合わせ"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap align-items-center">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">個人情報の同意</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1">
+                                                <input class="styled-checkbox" id="checkbox-1" type="checkbox"
+                                                    value="同意する "
+                                                       name="acceptation" data-title="">
+                                                <label for="checkbox-1">同意する （個人情報の取扱いについては <a href="./privacy-policy.html" target="_blank"
+                                                                                               class="text-red font-weight-bold">こちら</a> をご確認ください)</label>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="container-submit-form d-flex-center">
+                                            <button id="confirmBtn" type="button" class="default-btn next-step">確認ページへ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step2">
+                                    <div class="form-base px-70 py-50">
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">会社名</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1 d-flex align-items-center">
+                                                <span id="companyNameTarget"></span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">お名前</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1 d-flex align-items-center">
+                                                <span id="nameTarget"></span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">電話番号</div>
+                                                <div class="note-form jp gray">任意</div>
+                                            </div>
+                                            <div class="input-form flex-1 d-flex align-items-center">
+                                                <span id="phoneTarget"></span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">メールアドレス</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1 d-flex align-items-center">
+                                                <span id="emailTarget"></span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">お問い合わせ</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1 d-flex align-items-center">
+                                                <span id="inquiryTarget"></span>
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="item-group-form d-flex flex-wrap">
+                                            <div class="title-form jp d-flex align-items-center justify-content-between">
+                                                <div class="content-title-form font-weight-bold">個人情報の同意</div>
+                                                <div class="note-form jp">必須</div>
+                                            </div>
+                                            <div class="input-form flex-1 d-flex align-items-center">
+                                                同意する 
+                                            </div>
+                                        </div>
+                                        <div class="border-top w-100 my-4"></div>
+                                        <div class="container-submit-form d-flex-center">
+                                            <button id="backBtn" type="button" class="mr-2 default-btn prev-step">戻る</button>
+                                            <button id="submitBtn" type="button" class="ml-2 default-btn next-step">送信する</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="step3">
+                                    <h3 class="text-center font-weight-bold mb-4">お問い合わせ完了</h3>
+                                    <p class="text-center mb-0">お問い合わせいただきありがとうございました。</p>
+                                    <p class="text-center mb-0">通常5営業日以内に弊社担当よりお問い合わせの返信をさせて頂きますが、</p>
+                                    <p class="text-center mb-0">お問い合わせ内容や、混雑状況等によって前後する場合もございますので予めご了承ください。</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="loading" class="loading hide"><div class="lds-spinner"><div></div><div></div><div></div><div></div></div></div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+    <script src="./../js/common.js"></script>
+    <script src="./../js/contact.js"></script>
+    <!--script only use static html-->
+    <script src="./../js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            highlightMenu(3)
+        })
+    </script>
+    <!--script only use static html-->
+</body>
+
+</html>
